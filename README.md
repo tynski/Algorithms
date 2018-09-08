@@ -1,2 +1,2 @@
 # Algorithms
-This repo is for practicing my Python skill language in writing alghoritms.
+This repo is for practicing my skill in writing alghoritms in Python.
