@@ -1,5 +1,3 @@
-# Sorting algorithm, returns sorted list
-
 def selectionSort(array):
     for index in range(len(array)):
         swap(array,index,indexOfMinimum(array, index))
