@@ -1,2 +1,2 @@
 # Algorithms
-Just practicing my skill in writing alghoritms in Python.
+Practicing my skill in writing various alghoritms in Python.
