@@ -12,6 +12,4 @@ def indexOfMinimum(array,startIndex):
     return minIndex
 
 def swap(array, firstIndex, secondIndex):
-    temp = array[firstIndex]
-    array[firstIndex] = array[secondIndex]
-    array[secondIndex] = temp
+    array[secondIndex], array[firstIndex] = array[firstIndex], array[secondIndex]
