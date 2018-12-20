@@ -1,19 +1,8 @@
-def quicksort(array, first, last):
-    if(first < last):
-        pivot = partition(array, first, last)
-        quicksort(array, first, pivot - 1)
-        quicksort(array, pivot + 1, last)
-
-
-def partition(array, first, last):
-    q = first
-    for j in range(first, last):
-        if(array[j] <= array[last]):
-            swap(array, q, j)
-            q += 1
-    swap(array, q, last)
-    return q
-
-
-def swap(array, first, second):
-    array[second], array[first] = array[first], array[second]
+def quicksort(array):
+    if len(array) <= 1:
+        return array
+    pivot = array[len(array) // 2]
+    left = [x for x in array if x < pivot]
+    middle = [x for x in array if x == pivot]
+    right = [x for x in array if x > pivot]
+    return quicksort(left) + middle + quicksort(right)
