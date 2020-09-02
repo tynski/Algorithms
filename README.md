@@ -1,2 +1,8 @@
 # Algorithms
-Practicing my skill in writing various alghoritms in Python.
+Practicing coding  writing various alghoritms.
+
+Type of algorithms:
+* searching
+* sorting
+* utilities
+* coding tasks
