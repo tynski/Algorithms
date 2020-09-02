@@ -13,3 +13,6 @@ C=[2,9,2,5,7,10]
 
 ## Time complexity analysis
 The Big O time analysis for the given algorithm is O(n^5). Worst-case time complexity may be scary, though in typical use case creating a dictionary with numbers frequency and use of counter domain here: `[i for i in a if not i in skip_them]` can be much faster.
+
+## Dependencies
+Python 3.8.5
