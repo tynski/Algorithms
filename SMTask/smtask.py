@@ -11,7 +11,12 @@ def get_c(a,b):
 
     skip_them = [k for k, v in number_frequency_dict.items() if v in prime_numbers]
 
-    return [c_element for c_element in a if not c_element in skip_them]
+    c = []
+    for i in a:
+        if not i in skip_them:
+            c.append(i)
+    #return [c_element for c_element in a if not c_element in skip_them]
+    return c
 
 def get_number_frequency(numbers_list):
     number_freq = {}
@@ -39,6 +44,6 @@ def get_prime_numbers_list(end):
 if __name__ == "__main__":
     A = input("Enter A list:\n")
     B = input("Enter B list:\n")
-    print("Thank you!\nHere is result C list:\n")
+    print("Thank you!\nHere is result C list:")
     print("".join(get_c(A,B)))
 
