@@ -1,4 +1,4 @@
-from SMTask import get_c
+from smtask import get_c
 
 def testGet_c(a, b, c, testNumber):
     if get_c(a, b) == c:
@@ -35,3 +35,15 @@ A5 = [4,5,6,2,32,4,3]
 B5 = []
 C5 = [4,5,6,2,32,4,3]
 testGet_c(A5, B5, C5, 5)
+
+#Test6
+A5 = [4,5,6,2,32,4,3]
+B5 = [4]
+C5 = [4,5,6,2,32,4,3]
+testGet_c(A5, B5, C5, 6)
+
+#Test7
+A1 = [3]
+B1 = [2,1,3,4,3,10,6,6,1,7,10,10,10]
+C1 = []
+testGet_c(A1, B1, C1, 7)
