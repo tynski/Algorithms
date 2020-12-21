@@ -19,3 +19,6 @@ def binarySearch(searchedList, target):
             Max = searchPosition - 1
     
     return 'Nothing found'
+
+print(binarySearch([2,3,4,10,16,17,20], 17))
+print(binarySearch([4,5,10,96,250,650,1000,2000,2456], 2456))
