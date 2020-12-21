@@ -1,3 +1,5 @@
+import math
+
 def binarySearch(searchedList, target):
     if not searchedList:
     	return 'Dont have list to search'
