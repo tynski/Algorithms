@@ -1,5 +1,5 @@
 def solution(l):
-    if not(l and sum(l) > 2):
+    if not(sum(l) > 2):
         return 0
     l.sort()
     if sum(l) % 3 == 1:
@@ -13,7 +13,10 @@ def solution(l):
                 if m:
                     l.remove(m)
                     l.remove(i)
-                    return convert(l[::-1])
+                    if sum(l) > 2:
+                        return convert(l[::-1])
+                    else:
+                        return 0
                 else:
                     m = i
         return 0
@@ -28,7 +31,10 @@ def solution(l):
                 if m:
                     l.remove(m)
                     l.remove(i)
-                    return convert(l[::-1])
+                    if sum(l) > 2:
+                        return convert(l[::-1])
+                    else:
+                        return 0
                 else:
                     m = i
         return 0
