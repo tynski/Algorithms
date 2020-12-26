@@ -41,16 +41,15 @@ def solution(l):
     else:
         return convert(l[::-1])
 
-def convert(list): 
+
+def convert(list):
     return int("".join([str(i) for i in list]))
+
 
 print(solution([3, 1, 4, 1, 5, 9]))
 print(solution([3, 1, 4, 1]))
 print(solution([]))
-print(solution([1,1]))
+print(solution([1, 1]))
 print(solution([2]))
 print(solution([1]))
-print(solution([2,2]))
-
-
-
+print(solution([2, 2]))
