@@ -1,4 +1,7 @@
 def solution(l):
+    if len(l) < 3:
+        return 0
+    
     l.sort()
     result = 0
 
