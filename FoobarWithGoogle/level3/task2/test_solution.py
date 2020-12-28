@@ -5,4 +5,6 @@ def test_solution():
 
     assert solution([1, 1, 1]) == 1
 
+    assert solution([2,7,8,15,21,24,65,80]) == 2
+
 test_solution()
