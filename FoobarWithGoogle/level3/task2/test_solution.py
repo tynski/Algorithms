@@ -14,5 +14,7 @@ def test_solution():
 
     assert solution([68, 234, 112, 32, 13, 20]) == 0
 
+    assert solution([1,99,2,98,3]) == 1
+
 
 test_solution()
