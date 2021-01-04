@@ -1,5 +1,4 @@
 #Hereby solution is utlizing absorbing markow chains
-#TODO add assertion
 
 from fractions import Fraction
 from fractions import gcd
