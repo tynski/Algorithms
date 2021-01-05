@@ -71,8 +71,37 @@ class Graph:
                 v = parent[v]
 
         return max_flow
-        
-def solution(entrances, exits, path):
-    return 0
 
-solution(0,0,0)
+def solution(entrances, exits, path):
+    if not exits or not entrances:
+        return 0
+        
+    bunny_limit = 2000000
+    new_path = []
+    dimension = len(path) + 3
+
+    synthetic_source = [0] * dimension
+    synthetic_source[1] = bunny_limit
+    source = [0] * dimension
+
+    for i in entrances:
+        source[i + 2] = bunny_limit
+
+    new_path.append(synthetic_source)
+    new_path.append(source)
+
+    synthetic_exit = [0] * dimension
+    
+    for i in range(len(path)):
+        temp_row = [0,0] + path[i]
+        if i in exits:
+            temp_row.append(2000000)
+        else:
+            temp_row.append(0)
+        new_path.append(temp_row)
+    
+    new_path.append(synthetic_exit)
+
+    residual_graph = Graph(new_path)
+    return residual_graph.edmonds_karp(0, len(new_path) - 1)
+    
