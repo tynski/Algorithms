@@ -1,4 +1,3 @@
-#Test 3 is returning 0
 from solution import solution
 
 def test_solution():

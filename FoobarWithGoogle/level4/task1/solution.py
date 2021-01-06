@@ -78,22 +78,19 @@ def solution(entrances, exits, path):
         
     bunny_limit = 2000000
     new_path = []
-    dimension = len(path) + 3
+    dimension = len(path) + 2
 
     synthetic_source = [0] * dimension
-    synthetic_source[1] = bunny_limit
-    source = [0] * dimension
 
     for i in entrances:
-        source[i + 2] = bunny_limit
+        synthetic_source[i + 1] = bunny_limit
 
     new_path.append(synthetic_source)
-    new_path.append(source)
 
     synthetic_exit = [0] * dimension
     
     for i in range(len(path)):
-        temp_row = [0,0] + path[i]
+        temp_row = [0] + path[i]
         if i in exits:
             temp_row.append(2000000)
         else:
