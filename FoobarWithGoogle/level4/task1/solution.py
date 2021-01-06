@@ -73,7 +73,7 @@ class Graph:
         return max_flow
 
 def solution(entrances, exits, path):
-    if not exits or not entrances:
+    if not (exits and entrances and path):
         return 0
         
     bunny_limit = 2000000
