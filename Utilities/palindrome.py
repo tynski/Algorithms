@@ -6,3 +6,11 @@ def palindrome_index(word):
                 return n-1-i
             return i
     return -1
+
+def is_palindrome(word):
+    n = len(word)
+    for i in range(n//2+1):
+        if word[i] != word[n-1-i]:
+            return False
+
+    return True
